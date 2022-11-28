@@ -16,9 +16,7 @@ const SignupForm = () => {
 
   // set state for form validation
   const [validated] = useState(false);
-  // set state for alert
   const [showAlert, setShowAlert] = useState(false);
-
   const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
@@ -117,11 +115,6 @@ const SignupForm = () => {
           </Button>
         </Form>
 
-      {error && (
-        <div className="my-3 p-3 bg-danger text-white">
-          {error.message}
-        </div>
-      )}
     </>
   );
 };
