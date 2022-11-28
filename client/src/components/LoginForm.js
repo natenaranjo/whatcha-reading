@@ -82,6 +82,7 @@ const LoginForm = () => {
           variant='success'>
           Submit
         </Button>
+        {error && <span>error.message</span>}
       </Form>
     </>
   );
