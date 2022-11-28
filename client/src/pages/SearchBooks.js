@@ -132,7 +132,11 @@ const SearchBooks = () => {
                         : 'Save this Book!'}
                     </Button>
                   )}
-                  {error && <span className='ml-2'>Error: Please Contact Administator</span>}
+                  {error && (
+                    <div className="my-3 p-3 bg-danger text-white">
+                      {error.message}
+                    </div>
+                  )}
                 </Card.Body>
               </Card>
             );
