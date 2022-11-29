@@ -85,8 +85,17 @@ Second we use Apollo Provider in React to communicate with the Apollo Server the
   - [x] THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+## Installation
+
+> Pull a clone of the repo
+
+> Run npm install -> to install all the necessary dependenacies
+
+> Run npm run develop -> to run the application in localhost.
+
 
 ---
 
