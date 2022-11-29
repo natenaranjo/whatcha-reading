@@ -46,9 +46,45 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Project Screenshot][project-screenshot-1]](https://github.com/natenaranjo/whatcha-reading)
+[![Project Screenshot][project-screenshot-1]](https://whatcha-reading.herokuapp.com/)
 
- 
+> As an avid reader wanted to be able to search for books to read and save books for future reading or purchase.
+
+First we had to setup an Apollo Server to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.  We also modified the authentication middleware to work in the context of GraphQL API.
+
+Second we use Apollo Provider in React to communicate with the Apollo Server then deployed to Heroku.
+
+> A book search engine requirements for the web app.
+- WHEN I load the search engine
+  - [x] THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+- WHEN I click on the Search for Books menu option
+  - [x] THEN I am presented with an input field to search for books and a submit button
+- WHEN I am not logged in and enter a search term in the input field and click the submit button
+  - [x] THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+- WHEN I click on the Login/Signup menu option
+  - [x] THEN a modal appears on the screen with a toggle between the option to log in or sign up
+- WHEN the toggle is set to Signup
+  - [x] THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+- WHEN the toggle is set to Login
+  - [x] THEN I am presented with two inputs for an email address and a password and login button
+- WHEN I enter a valid email address and create a password and click on the signup button
+  - [x] THEN my user account is created and I am logged in to the site
+- WHEN I enter my account’s email address and password and click on the login button
+  - [x] THEN I the modal closes and I am logged in to the site
+- WHEN I am logged in to the site
+  - [x] THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+- WHEN I am logged in and enter a search term in the input field and click the submit button
+  - [x] THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+- WHEN I click on the Save button on a book
+  - [x] THEN that book’s information is saved to my account
+- WHEN I click on the option to see my saved books
+  - [x] THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+- WHEN I click on the Remove button on a book
+  - [x] THEN that book is deleted from my saved books list
+- WHEN I click on the Logout button
+  - [x] THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,9 +92,11 @@
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+> After Login, when searching for a book there will be a button available to now save the book to your collection.  This only will show once the user has logged in.  Also after the user clicks to save the book the button will transform to show this book is already saved once it is added to collection.
+[![Project Screenshot][project-screenshot-2]](https://whatcha-reading.herokuapp.com/)
 
-
-
+> Clicking on "See your Books" will take you to a pade to show all the books that you saved also gives an accound of how many books are saved at the top.  Here there a button will appear on each book as well to remove the book from your collection if so desire.
+[![Project Screenshot][project-screenshot-3]](https://whatcha-reading.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,8 +137,8 @@ This was accomplished by those listed below:
 [issues-url]: https://github.com/natenaranjo/whatcha-reading/issues
 [license-shield]: https://img.shields.io/github/license/natenaranjo/whatcha-reading.svg?style=for-the-badge
 [license-url]: https://github.com/natenaranjo/whatcha-reading/blob/master/LICENSE.txt
-[project-screenshot-1]: ./public/img/screenshot.png
-[project-screenshot-2]: ./public/img/screenshot-2.png
-[project-screenshot-3]: ./public/img/screenshot-3.png
-[project-screenshot-4]: ./public/img/screenshot-4.png
-[project-screenshot-5]: ./public/img/screenshot-5.png
+[project-screenshot-1]: /client/src/imgs/screenshot.png
+[project-screenshot-2]: ./client/src/imgs/screenshot-2.png
+[project-screenshot-3]: ./client/src/imgs/screenshot-3.png
+[project-screenshot-4]: ./client/src/imgs/screenshot-4.png
+[project-screenshot-5]: ./client/src/imgs/screenshot-5.png
